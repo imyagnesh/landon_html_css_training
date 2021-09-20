@@ -43,3 +43,8 @@ Content-Type: image/jpg
 
 // DOM
 // Documented Object Modal
+
+
+Clone -> copy code to machine
+
+commit -> you are submiting your work on your local
