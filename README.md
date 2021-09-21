@@ -1,6 +1,26 @@
 # landon_html_css_training
 html css training
 
+// GIT
+// How Website works
+
+// HTML
+// CSS
+// b
+// ECMA Script 5
+
+
+// ECMA Script 6 + 11
+
+
+// Javascript // ES6
+
+// C#/Python/Advace Javascript
+
+// Database
+
+// Middleware
+
 ## we will learn
 
 - The Language & tools of the web development
