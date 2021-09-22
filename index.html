@@ -14,10 +14,67 @@
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <meta name="description" content="portfolio">
 </head>
-<body>
+<body style="margin: 0;">
+
+  
   <!-- block tags -->
   <section style="height: 100vh;width: 100vw;">
-  <img src="./images/bgImage.jpg" alt="background Image" height="100%" width="100%" style="object-fit: cover;">
+  <!-- <img src="./images/bgImage.jpg" alt="background Image" height="100%" width="100%" style="object-fit: cover;"> -->
+
+<!-- image formats -->
+<!-- 
+  1200 X 1200 same resolution
+  JPGE -> highest memory 1.2mb
+  PNG -> less then jpg 1.0mb
+  webp -> .6mb
+ -->
+
+ <!-- 
+   older devices 1
+   android devices 1.5
+  -->
+
+  <figure>
+    <figcaption>This is background image</figcaption>
+    <img src="./images/bgImage.jpg" alt="Background Image" lazy height="200px" width="200px" />
+  </figure>
+
+  <picture>
+    <source srcset="./images/bgImage@3x.jpg" media="(min-width:1024px)" style="height: 100vh; width: 100vw;object-fit: cover;" />
+    <source srcset="./images/bgImage@2x.jpg" media="(min-width:768px)"  style="height: 100vh; width: 100vw;object-fit: cover;" />
+    <img src="./images/bgImage.jpg" alt="Background Image" style="height: 100vh; width: 100vw;object-fit: cover;" />
+  </picture>
+
+  <address>
+  </address>
+
+  
+
+  <tel></tel>
+
+
+  
+
+  <!-- 
+  1200 X 1200 same resolution
+  JPGE -> highest memory 1.2mb
+  PNG -> less then jpg 1.0mb
+  webm -> .6mb
+ -->
+
+  <video>
+
+  </video>
+
+  <audio>
+
+  </audio>
+
+  <!-- <img src="https://assets.website-files.com/5fbfced1616001801fabc45b/5fd3a638f0c7fcc400c9812c_Hero%20Image.png" 
+  loading="lazy" 
+  width="625" 
+  sizes="(max-width: 479px) 100vw, (max-width: 767px) 94vw, (max-width: 991px) 625px, 30vw" 
+  srcset="https://assets.website-files.com/5fbfced1616001801fabc45b/5fd3a638f0c7fcc400c9812c_Hero%20Image-p-500.png 500w, https://assets.website-files.com/5fbfced1616001801fabc45b/5fd3a638f0c7fcc400c9812c_Hero%20Image.png 591w" alt=""> -->
 </section>
 
 
