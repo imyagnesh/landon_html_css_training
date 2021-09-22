@@ -1,12 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Forms</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>Gender</legend>
+        <div>
+            <input type="radio" name="gender" id="male" />
+            <label for="male">Male</label>
+        </div>
+        <div>
+            <input type="radio" name="gender" id="female" checked />
+            <label for="female">Female</label>
+        </div>
+      </fieldset>
+      <label for="txtName">Name</label>
+      <input
+        type="text"
+        id="txtName"
+        required
+        pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"
+      />
+      <!-- <input type="password" /> -->
+      <!-- <input type="number" max="10" /> -->
+      <!-- <input type="date" /> -->
+      <!-- <input type="time" /> -->
+      <!-- <input type="email" placeholder="EMAIL" required /> -->
+      <!-- <input type="search" />
+      <input type="tel" />
+      <input type="week" />
+      <input type="month" />
+      <input type="color" /> -->
+      <button type="submit">Submit</button>
+    </form>
+  </body>
 </html>
