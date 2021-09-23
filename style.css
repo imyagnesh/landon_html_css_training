@@ -1,0 +1,33 @@
+/* p {
+    color: dodgerblue;
+} */
+
+
+
+div section p {
+    color: dodgerblue;
+}
+
+#caption {
+    color: red;
+}
+
+/* button, a {
+    padding: 8px 12px;
+    background-color: #fff;
+    border: 0.5px solid #4a4a4a;
+    text-decoration: none;
+    color: #4a4a4a;
+} */
+
+.btn {
+    padding: 8px 12px;
+    background-color: #fff;
+    border: 0.5px solid #4a4a4a;
+    text-decoration: none;
+    color: #4a4a4a;
+}
+.redBorder {
+    border: 0.5px solid red;
+}
+
