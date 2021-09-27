@@ -2,32 +2,154 @@
     color: dodgerblue;
 } */
 
+/* 
+,(it apply to all elemenmt defined)
+>(it will apply to immidiate children)
++( it will apply to immidete sibling)
+~(it will apply to all sibling after the element) 
+
+*/
+
+/* tilda */
+
+/* h1, h2 {
+    color: green;
+} */
+
+/* header {
+    background-color: hotpink;
+} */
+
+.box-wrapper {
+    height: 100vh;
+    background-color: yellow;
+    position: relative;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+}
+
+.box:nth-child(2) {
+    background-color: green;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
 
 
-div section p {
+h2 ~ article {
+    background-color: floralwhite;
+}
+
+
+.heading2 {
+    margin: 0;
+    font-size: 24px;
+    color: red; 
+}
+
+.blueHeading {
+    color: blue;
+}
+
+
+
+/* aside > h2 {
+   margin: 0;
+   font-size: 24px;
+   color: red;
+}
+
+aside > article > h2 {
+    margin: 0;
+   font-size: 24px;
+   color: blue;
+} */
+
+
+h1.logo:hover {
+    color: red;
+    cursor: pointer;
+}
+
+input:focus-visible {
+    outline-color: red;
+}
+
+button:focus, button:active {
+    background: red;
+}
+
+/* nav > ul > li:first-child {
     color: dodgerblue;
 }
 
-#caption {
+nav > ul > li:last-child {
+    color: gold;
+} */
+
+nav > ul > li:nth-child(2),
+nav > ul > li:nth-child(3) {
+    color: orange;
+}
+
+.temp > p:first-of-type {
     color: red;
 }
 
-/* button, a {
-    padding: 8px 12px;
-    background-color: #fff;
-    border: 0.5px solid #4a4a4a;
-    text-decoration: none;
-    color: #4a4a4a;
-} */
+.blog-content {
+    color: red;
+}
 
-.btn {
-    padding: 8px 12px;
-    background-color: #fff;
-    border: 0.5px solid #4a4a4a;
-    text-decoration: none;
-    color: #4a4a4a;
+/* pschedo-elements */
+.blog-content::before {
+    content: "...";
 }
-.redBorder {
-    border: 0.5px solid red;
+
+.blog-content::after {
+    content: "...";
 }
+
+nav > ul {
+    padding: 0;
+    margin: 10px 0;
+}
+
+nav > ul > li {
+    list-style-type: none;
+    display: inline;
+    margin-right: 20px;
+    position: relative;
+    /* border-bottom: 1px solid red; */
+}
+
+nav > ul[role="menu"] > li::after {
+    content: "";
+    height: 1px;
+    background-color: red;
+    width: 0;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+nav > ul[role="menu"] > li:hover::after {
+    width: 100%;
+}
+
+
+
+nav > ul > li:first-child {
+    margin-left: 20px;
+}
+
+nav > ul > li:last-child {
+    margin-right: 0;
+}
+
+
+
+
 

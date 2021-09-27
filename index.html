@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS(CASCADING STYLE SHEET)</title>
-    <link rel="stylesheet" href="./normalize.css">
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./normalize.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- every every tag has 3 Purpose -->
+    <!-- 1. Provide the UI -->
+    <!-- 2. Help in SEO -->
+    <!-- 3. Help in Accecibility -->
+
     <!-- 3 ways we can apply style -->
     <!-- Every Element has own style -->
     <!-- Each Browser Apply diffrent stype for each element -->
@@ -16,19 +21,153 @@
     <!-- 2. Embeded Style: Second Priority base on order -->
     <!-- 3. External Style: Second Priority base on order -->
     <!-- <h1>Hello From Html</h1> -->
-
-    <div>
+    <!-- <div>
         <section>
             <p>Hello P from inside of div</p>
         </section>
-    </div>
+    </div> -->
 
-    <p id="caption">Hello p from outer world</p>
+    <!-- <table>
+      <tbody>
+        <tr>
+          <td>
+            <label for="name">Name</label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="text" name="name" id="name" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="email">Email</label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input style="width: 100%" type="text" name="email" id="email" />
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div>
+      <label for="name">Name</label>
+    </div>
+    <div>
+      <input style="width: 100%" type="text" name="name" id="name" />
+    </div>
+    <div>
+      <label for="email">Email</label>
+    </div>
+    <div>
+      <input type="text" name="email" id="email" />
+    </div> -->
+
+    <!-- <p id="caption">Hello p from outer world</p>
 
     <button class="btn redBorder">Submit</button>
 
     <a class="btn" href="">Submit</a>
 
-    <button class="btn">Login</button>
-</body>
+    <button class="btn">Login</button> -->
+
+    <!-- layout -->
+    <!-- Layout elements help us only for accessibility or SEO -->
+
+    <!-- SEO -->
+    <header>
+      <!-- UI & SEO -->
+      <h1 class="logo">Logo</h1>
+
+      <!-- <div class="box-wrapper">
+        <div class="box">A</div>
+        <div class="box ">B</div>
+        <div class="box">C</div>
+      </div> -->
+
+      <form action="">
+        <input aria-label="" type="text" />
+        <button>Help</button>
+      </form>
+
+      <div role="navigation">
+        <nav>
+          <ul role="menu">
+            <li>Home</li>
+            <li>About</li>
+            <li>Blog</li>
+            <li>Contact</li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="temp">
+      <!-- Accebvility -->
+      <p>Lorem, ipsum.</p>
+      <p>Lorem, ipsum.</p>
+      <p>Lorem, ipsum.</p>
+      <p>Lorem, ipsum.</p>
+      <span>Lorem, ipsum dolor.</span>
+    </div>
+
+    <!-- ACCESIBILITY -->
+    <aside id="leftSidebar">
+      <article>
+        <h1 class="heading1">hello from uper artical</h1>
+      </article>
+
+      <h2 class="heading2">Left Side bar</h2>
+      <article>
+        <h2 class="heading2 blueHeading">From Artical</h2>
+      </article>
+      <ul>
+        <li>Facebook</li>
+        <li>Twitter</li>
+      </ul>
+
+      <article>
+        <h2>From second artical</h2>
+      </article>
+      <h2 class="heading2">Left Side bar</h2>
+    </aside>
+
+    <!-- Help in accesibility -->
+    <main>
+      <section id="About">
+        <h2>About Section</h2>
+      </section>
+
+      <section id="contact">
+        <h2>contact Section</h2>
+      </section>
+
+      <article>
+        <p class="blog-content">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae
+          maxime magnam omnis commodi sequi accusamus consequuntur facere neque
+          similique nemo quia, vel ea nisi eius est alias rem provident et
+          voluptatum dolor ipsa iure. Nobis sapiente molestias unde cumque
+          aspernatur eius quis libero aperiam consectetur! Sequi repellat nam
+          possimus illum debitis dignissimos ducimus ad nostrum quo autem
+          aliquam, deleniti perspiciatis error eligendi, doloribus fuga
+          molestiae delectus eveniet ab quibusdam corporis iusto iste dolores
+          consequatur. Reprehenderit voluptas laboriosam culpa hic porro magnam
+          eos quam minima natus, qui quo tenetur quod cum veniam, enim
+          voluptatum distinctio inventore voluptatem reiciendis sed commodi
+          earum.
+        </p>
+      </article>
+    </main>
+
+    <aside id="rightSidebar">
+      <h2>Right Side bar</h2>
+    </aside>
+
+    <footer>
+      <h2>Footer</h2>
+    </footer>
+  </body>
 </html>
