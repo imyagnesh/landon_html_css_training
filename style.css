@@ -19,6 +19,23 @@
 /* header {
     background-color: hotpink;
 } */
+/* 
+div[role="banner"] {
+    height: 100vh;
+    width: 100vw;
+    background-color: ivory;
+} */
+
+.image {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    float: right;
+}
+
+.container p:nth-child(3) {
+    clear: right;
+}
 
 .box-wrapper {
     height: 100vh;
@@ -27,10 +44,23 @@
 }
 
 .box {
-    height: 100px;
-    width: 100px;
+    height: 300px;
+    width: 100%;
+    max-width: 600px;
     background-color: red;
 }
+
+.inner-box {
+    height: 100px;
+    width: 100%;
+    background-color: yellow;
+}
+
+/* .inner-box {
+    background-color: yellow;
+    height: 100vh;
+    width: 100vw;
+} */
 
 .box:nth-child(2) {
     background-color: green;
@@ -69,11 +99,22 @@ aside > article > h2 {
    color: blue;
 } */
 
+h1 {
+    font-size: 2rem;
+}
 
-h1.logo:hover {
+.art {
+    font-size: 20px;
+}
+.art > p {
+    font-size: 2em;
+}
+
+
+/* h1.logo:hover {
     color: red;
     cursor: pointer;
-}
+} */
 
 input:focus-visible {
     outline-color: red;
@@ -128,7 +169,7 @@ nav > ul > li {
 
 nav > ul[role="menu"] > li::after {
     content: "";
-    height: 1px;
+    height: 1;
     background-color: red;
     width: 0;
     position: absolute;
