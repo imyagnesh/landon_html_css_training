@@ -1,3 +1,21 @@
+@font-face {
+    font-family: 'opensans';
+    src: url('./assets/fonts/opensans-regular-webfont.woff2') format('woff2'),
+         url('./assets/fonts/opensans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'opensans_bold';
+    src: url('./assets/fonts/opensans-bold-webfont.woff2') format('woff2'),
+         url('./assets/fonts/opensans-bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
 /* p {
     color: dodgerblue;
 } */
@@ -26,6 +44,11 @@ div[role="banner"] {
     background-color: ivory;
 } */
 
+body {
+    font-family: 'opensans', Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
 .image {
     height: 100px;
     width: 100px;
@@ -35,6 +58,17 @@ div[role="banner"] {
 
 .container p:nth-child(3) {
     clear: right;
+}
+
+p {
+    font-weight: 700;
+    font-style: normal;
+}
+
+h1 {
+    font-family: 'opensans_bold', sans-serif;
+    font-weight: 700;
+    font-size: 2em;
 }
 
 .box-wrapper {
@@ -99,9 +133,9 @@ aside > article > h2 {
    color: blue;
 } */
 
-h1 {
+/* h1 {
     font-size: 2rem;
-}
+} */
 
 .art {
     font-size: 20px;
