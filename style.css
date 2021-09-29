@@ -1,230 +1,95 @@
-@font-face {
-    font-family: 'opensans';
-    src: url('./assets/fonts/opensans-regular-webfont.woff2') format('woff2'),
-         url('./assets/fonts/opensans-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+body {
+    margin: 0;
+    padding: 0;
 }
-
-@font-face {
-    font-family: 'opensans_bold';
-    src: url('./assets/fonts/opensans-bold-webfont.woff2') format('woff2'),
-         url('./assets/fonts/opensans-bold-webfont.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
-
-/* p {
-    color: dodgerblue;
-} */
-
-/* 
-,(it apply to all elemenmt defined)
->(it will apply to immidiate children)
-+( it will apply to immidete sibling)
-~(it will apply to all sibling after the element) 
-
-*/
-
-/* tilda */
-
-/* h1, h2 {
-    color: green;
-} */
 
 /* header {
-    background-color: hotpink;
+    display: flex;
+    flex-direction: column;
 } */
+
 /* 
-div[role="banner"] {
+Flex-direction is row -> justify content -> x
+Flex-direction is column -> justify content -> y
+ */
+
+ /* 
+Flex-direction is row -> align-items -> y
+Flex-direction is column -> align-items -> x
+ */
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: flex-start; */
+    /* align-items: baseline; */
     height: 100vh;
-    width: 100vw;
-    background-color: ivory;
-} */
-
-body {
-    font-family: 'opensans', Arial, Helvetica, sans-serif;
-    font-size: 1rem;
-}
-
-.image {
-    height: 100px;
-    width: 100px;
     background-color: red;
-    float: right;
-}
-
-.container p:nth-child(3) {
-    clear: right;
-}
-
-p {
-    font-weight: 700;
-    font-style: normal;
-}
-
-h1 {
-    font-family: 'opensans_bold', sans-serif;
-    font-weight: 700;
-    font-size: 2em;
-}
-
-.box-wrapper {
-    height: 100vh;
-    background-color: yellow;
-    position: relative;
 }
 
 .box {
-    height: 300px;
-    width: 100%;
-    max-width: 600px;
-    background-color: red;
+    height: 200px;
+    background-color: orange;
 }
 
-.inner-box {
-    height: 100px;
-    width: 100%;
-    background-color: yellow;
-}
+/* 3:2:1 */
 
-/* .inner-box {
-    background-color: yellow;
-    height: 100vh;
-    width: 100vw;
-} */
+.box:nth-child(1) {
+    flex-grow: 1;
+    order: 2;
+    align-self: flex-end;
+}
 
 .box:nth-child(2) {
-    background-color: green;
-    position: absolute;
-    top: 0;
-    bottom: 0;
+    flex-grow: 1;
+    order: 1;
+}
+
+.box:nth-child(3) {
+    flex-grow: 1;
+    order: 3;
 }
 
 
-h2 ~ article {
-    background-color: floralwhite;
-}
-
-
-.heading2 {
-    margin: 0;
-    font-size: 24px;
-    color: red; 
-}
-
-.blueHeading {
-    color: blue;
-}
-
-
-
-/* aside > h2 {
-   margin: 0;
-   font-size: 24px;
-   color: red;
-}
-
-aside > article > h2 {
-    margin: 0;
-   font-size: 24px;
-   color: blue;
+/* For Small Screen */
+/* @media screen and (min-width: 640px) {
+    header {
+        background-color: green;
+    }
 } */
 
-/* h1 {
-    font-size: 2rem;
+/* For Medium Screen */
+/* @media screen and (min-width: 768px) {
+    header {
+        background-color: blue;
+    }
 } */
 
-.art {
-    font-size: 20px;
-}
-.art > p {
-    font-size: 2em;
-}
-
-
-/* h1.logo:hover {
-    color: red;
-    cursor: pointer;
+/* For Normal Screen */
+/* @media screen and (min-width: 1024px) {
+    header {
+        background-color: red;
+    }
 } */
 
-input:focus-visible {
-    outline-color: red;
-}
 
-button:focus, button:active {
-    background: red;
-}
-
-/* nav > ul > li:first-child {
-    color: dodgerblue;
-}
-
-nav > ul > li:last-child {
-    color: gold;
+/* For Large Screen */
+/* @media screen and (min-width: 1280px) {
+    header {
+        background-color: yellow;
+    }
 } */
 
-nav > ul > li:nth-child(2),
-nav > ul > li:nth-child(3) {
-    color: orange;
-}
+/* For Extra Large Screen */
+/* @media screen and (min-width: 1536px) {
+    header {
+        background-color: orange;
+    }
+} */
 
-.temp > p:first-of-type {
-    color: red;
-}
-
-.blog-content {
-    color: red;
-}
-
-/* pschedo-elements */
-.blog-content::before {
-    content: "...";
-}
-
-.blog-content::after {
-    content: "...";
-}
-
-nav > ul {
-    padding: 0;
-    margin: 10px 0;
-}
-
-nav > ul > li {
-    list-style-type: none;
-    display: inline;
-    margin-right: 20px;
-    position: relative;
-    /* border-bottom: 1px solid red; */
-}
-
-nav > ul[role="menu"] > li::after {
-    content: "";
-    height: 1;
-    background-color: red;
-    width: 0;
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-}
-nav > ul[role="menu"] > li:hover::after {
-    width: 100%;
-}
-
-
-
-nav > ul > li:first-child {
-    margin-left: 20px;
-}
-
-nav > ul > li:last-child {
-    margin-right: 0;
-}
-
-
-
-
-
+/* @media print {
+    header {
+        background-color: gold;
+    }
+} */
